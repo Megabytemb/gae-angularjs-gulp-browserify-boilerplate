@@ -8,6 +8,7 @@ import sass         from 'gulp-sass';
 import handleErrors from '../util/handleErrors';
 import browserSync  from 'browser-sync';
 import autoprefixer from 'gulp-autoprefixer';
+import moduleImporter from 'sass-module-importer';
 
 gulp.task('styles', function () {
 
@@ -18,7 +19,8 @@ gulp.task('styles', function () {
     .pipe(sass({
       sourceComments: !global.isProd,
       outputStyle: global.isProd ? 'compressed' : 'nested',
-      includePaths: config.styles.sassIncludePaths
+      includePaths: config.styles.sassIncludePaths,
+	  importer: moduleImporter()
     }))
     .on('error', handleErrors)
     .pipe(autoprefixer({

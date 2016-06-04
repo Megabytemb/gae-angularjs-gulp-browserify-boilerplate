@@ -1,4 +1,5 @@
 import angular from 'angular';
+import 'angular-material';
 
 // angular modules
 import constants from './constants';
@@ -11,6 +12,7 @@ import './controllers';
 import './services';
 import './directives';
 
+
 // create and bootstrap application
 const requires = [
   'ui.router',
@@ -18,7 +20,8 @@ const requires = [
   'app.filters',
   'app.controllers',
   'app.services',
-  'app.directives'
+  'app.directives',
+  'ngMaterial'
 ];
 
 // mount on window for testing
