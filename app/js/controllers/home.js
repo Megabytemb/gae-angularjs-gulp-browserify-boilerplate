@@ -1,5 +1,5 @@
-function ExampleCtrl() {
-
+function HomeCtrl() {
+  
   // ViewModel
   const vm = this;
 
@@ -9,6 +9,6 @@ function ExampleCtrl() {
 }
 
 export default {
-  name: 'ExampleCtrl',
-  fn: ExampleCtrl
+  name: 'HomeCtrl',
+  fn: HomeCtrl
 };

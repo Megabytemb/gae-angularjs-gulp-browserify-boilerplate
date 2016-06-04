@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Unit: ExampleCtrl', function() {
+describe('Unit: HomeCtrl', function() {
 
   let ctrl;
 
@@ -9,7 +9,7 @@ describe('Unit: ExampleCtrl', function() {
     angular.mock.module('app');
 
     angular.mock.inject(($controller) => {
-      ctrl = $controller('ExampleCtrl');
+      ctrl = $controller('HomeCtrl');
     });
   });
 
