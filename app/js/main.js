@@ -11,6 +11,7 @@ import './filters';
 import './controllers';
 import './services';
 import './directives';
+import './components';
 
 
 // create and bootstrap application
@@ -21,6 +22,7 @@ const requires = [
   'app.controllers',
   'app.services',
   'app.directives',
+  'app.components',
   'ngMaterial'
 ];
 
