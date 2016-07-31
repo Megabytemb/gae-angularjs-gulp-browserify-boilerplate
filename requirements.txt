@@ -1,0 +1,10 @@
+# This requirements file lists all third-party dependencies for this project.
+#
+# Run 'pip install -r requirements.txt -t app/lib/' to install these dependencies
+# in `app/lib/` subdirectory.
+#
+# Note: The `lib` directory is added to `sys.path` by `appengine_config.py`.
+flask
+oauth2client
+PyOpenSSL
+pycrypto

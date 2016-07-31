@@ -8,7 +8,7 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width">
 
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="static/css/main.css">
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body ng-controller="AppCtrl as app" layout="column">
@@ -42,12 +42,14 @@
 		  			This sidenav is locked open on your device. To go back to the default behavior,
 		  			narrow your display.
 		  		</p>
+          <md-button ui-sref="Home">Home</md-button>
+          <md-button ui-sref="page2">Page 2</md-button>
 		  	</md-content>
 		</md-sidenav>
 	  
 		<md-content class="container md-padding" ui-view></md-content>
 	</div>
 
-      <script src="js/main.js"></script>
+      <script src="static/js/main.js"></script>
   </body>
 </html>

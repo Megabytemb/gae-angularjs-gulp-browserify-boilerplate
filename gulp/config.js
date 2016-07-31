@@ -3,34 +3,35 @@
 export default {
 
   browserPort: 3000,
+  openbrowser: true,
   UIPort: 3001,
   testPort: 3002,
 
-  sourceDir: './app/',
-  buildDir: './build/',
+  sourceDir: './app/frontend_src/',
+  buildDir: './app/static/',
 
   styles: {
-    src: 'app/styles/**/*.scss',
-    dest: 'build/css',
+    src: 'app/frontend_src/styles/**/*.scss',
+    dest: 'app/static/css',
     prodSourcemap: false,
     sassIncludePaths: []
   },
 
   scripts: {
-    src: 'app/js/**/*.js',
-    dest: 'build/js',
+    src: 'app/frontend_src/js/**/*.js',
+    dest: 'app/static/js',
     test: 'test/**/*.js',
     gulp: 'gulp/**/*.js'
   },
 
   images: {
-    src: 'app/images/**/*',
-    dest: 'build/images'
+    src: 'app/frontend_src/images/**/*',
+    dest: 'app/static/images'
   },
 
   fonts: {
-    src: ['app/fonts/**/*'],
-    dest: 'build/fonts'
+    src: ['app/frontend_src/fonts/**/*'],
+    dest: 'app/static/fonts'
   },
 
   assetExtensions: [
@@ -48,14 +49,14 @@ export default {
   ],
 
   views: {
-    index: 'app/index.html',
-    src: 'app/views/**/*.html',
-    dest: 'app/js'
+    index: 'app/frontend_src/index.html',
+    src: 'app/frontend_src/views/**/*.html',
+    dest: 'app/frontend_src/js'
   },
 
   gzip: {
-    src: 'build/**/*.{html,xml,json,css,js,js.map,css.map}',
-    dest: 'build/',
+    src: 'app/static/**/*.{html,xml,json,css,js,js.map,css.map}',
+    dest: 'app/static/',
     options: {}
   },
 
