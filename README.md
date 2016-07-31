@@ -6,6 +6,9 @@ angularjs-gulp-browserify-boilerplate
 ###Fork
 Forked from https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate to add Angular Material
 
+### Running Dev Server
+`./run_devserver.sh`
+
 ### AngularJS
 
 AngularJS is a MVW (Model-View-Whatever) Javascript Framework for creating single-page web applications. In this boilerplate, it is used for all the application routing as well as all of the frontend views and logic.
@@ -13,23 +16,23 @@ AngularJS is a MVW (Model-View-Whatever) Javascript Framework for creating singl
 The AngularJS files are all located within `/app/js`, structured in the following manner:
 
 ```
-/controllers
+app/frontend_src/controllers
   index.js   (the main module on which all controllers will be mounted, loaded in main.js)
   example.js
-/directives
+app/frontend_src/directives
   index.js   (the main module on which all directives will be mounted, loaded in main.js)
   example.js
-/filters
+app/frontend_src/filters
   index.js (the main module on which all filters will be mounted, loaded in main.js)
   example.js
-/services
+app/frontend_src/services
   index.js   (the main module on which all services will be mounted, loaded in main.js)
   example.js
-constants.js  (any constant values that you want to make available to Angular)
-main.js       (the main file read by Browserify, also where the application is defined and bootstrapped)
-on_run.js     (any functions or logic that need to be executed on app.run)
-on_config.js  (all route definitions and any logic that need to be executed on app.config)
-templates.js  (this is created via Gulp by compiling your views, and will not be present beforehand)
+app/frontend_src/constants.js  (any constant values that you want to make available to Angular)
+app/frontend_src/main.js       (the main file read by Browserify, also where the application is defined and bootstrapped)
+app/frontend_src/on_run.js     (any functions or logic that need to be executed on app.run)
+app/frontend_src/on_config.js  (all route definitions and any logic that need to be executed on app.config)
+app/frontend_src/templates.js  (this is created via Gulp by compiling your views, and will not be present beforehand)
 ```
 
 ##### Module organization
